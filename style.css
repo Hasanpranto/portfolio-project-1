@@ -18,7 +18,8 @@ section{
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(images/Untitled\ design.png) no-repeat;
+  background: url(images/Untitled\ design\ \(1\).png)  no-repeat;
+
   background-size:cover;
   background-position: center;
   background-attachment:fixed;
@@ -46,7 +47,7 @@ section{
 }
 
 .animated-text h3{
-  color: #2e97c7;
+  color: #ca4940;
   font-size: 3em;
   font-weight: 700;
   line-height: 70px;
@@ -77,7 +78,7 @@ section{
 
 .btn{
   color: #fff;
-  background: #3a6cf4;
+  background: crimson;
   font-size: 1em;
   font-weight: 600;
   display: inline-block;
@@ -91,7 +92,7 @@ section{
 }
 
 .btn:hover{
-  background: #235bf6;
+  background: #ce0e0e;
 }
 
 .media-icons{
@@ -107,7 +108,7 @@ section{
 }
 
 .media-icons a:hover{
-  color: rgb(54, 123, 228);
+  color: crimson;
 }
 
 ::-webkit-scrollbar{
@@ -121,7 +122,7 @@ section{
 }
 
 ::-webkit-scrollbar-thumb{
-  background: #3e78ce;
+  background: crimson;
   width: 0;
   height: 30%;
   transition: 0.5s ease;
@@ -154,6 +155,9 @@ header .brand{
   text-transform: uppercase;
   text-decoration: none;
 }
+header .brand span{
+  color: rgb(255, 86, 86);
+}
 
 header .navigation{
   position: relative;
@@ -161,7 +165,7 @@ header .navigation{
 
 header .navigation a{
   color: #bebec5;
-  font-size: 1em;
+  font-size: 1.5rem;
   font-weight: 500;
   text-decoration: none;
   margin-left: 30px;
@@ -169,11 +173,11 @@ header .navigation a{
 }
 
 header .navigation a:hover{
-  color: #fafafa;
+  color: rgb(255, 86, 86);
 }
 
 header.sticky .navigation a:hover{
-  color: rgb(248, 246, 246);
+  color: rgb(255, 86, 86);
 }
 
 body{
@@ -190,7 +194,7 @@ body{
 
 .section-title{
   position: relative;
-  color: #3a6cf4;
+  color: crimson;
   font-size: 2.2em;
   font-weight: 800;
   margin-bottom: 60px;
@@ -203,7 +207,7 @@ body{
   left: 50%;
   width: 140px;
   height: 4px;
-  background: #3a6cf4;
+  background: #500909;
   transform: translateX(-50%);
 }
 
@@ -215,7 +219,7 @@ body{
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #3a6cf4;
+  background: #0c0303;
   transform: translateX(-50%);
 }
 
@@ -260,7 +264,7 @@ body{
 }
 
 .about .content .col-right .paragraph-text{
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .skills{
@@ -325,17 +329,17 @@ body{
 }
 
 .skills .content .col-right .bar .html:before{
-  width: 79%;
+  width: 88%;
   background: #e45126;
 }
 
 .skills .content .col-right .bar .css:before{
-  width: 72%;
+  width: 80%;
   background: #0c73b8;
 }
 
 .skills .content .col-right .bar .javascript:before{
-  width: 40%;
+  width: 65%;
   background: #e3a324;
 }
 
@@ -366,7 +370,7 @@ body{
 }
 
 .services .content .card .service-icon{
-  color: #3a6cf4;
+  color: crimson;
   font-size: 8em;
   text-align: center;
   transition: transform 0.5s ease;
@@ -381,7 +385,7 @@ body{
 }
 
 .services .content .card .info h3{
-  color: #3a6cf4;
+  color: crimson;
   font-size: 1.2em;
   font-weight: 700;
   margin: 10px;
@@ -438,6 +442,7 @@ body{
 .contact .content .row{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -456,7 +461,7 @@ body{
 }
 
 .contact .content .row .card .contact-icon{
-  color: #3a6cf4;
+  color: crimson;
   font-size: 4em;
   text-align: center;
   transition: transform 0.5s ease;
@@ -485,9 +490,13 @@ body{
 .contact-form{
   background: #fff;
   max-width: 600px;
-  margin-top: 50px;
+  margin: 4rem 2rem;
   padding: 50px;
   border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  
+}
+.google-map{
   box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
 }
 
@@ -518,22 +527,24 @@ body{
   resize: none;
 }
 
-.contact-form .input-box .send-btn{
+.contact-form .input-box .button{
   color: #fff;
-  background: #3a6cf4;
+  background: crimson;
   display: inline-block;
-  font-size: 1.1em;
-  font-weight: 500;
+  padding: 2px 5px 5px 5px;
+  font-size: 1em;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
   width: 100%;
   border: none;
   cursor: pointer;
   transition: 0.5s ease;
+  border-radius:5px;
 }
 
-.contact-form .input-box .send-btn:hover{
-  background: #235bf6;
+.contact-form .input-box .button:hover{
+  background: #a50808;
 }
 
 .footer{
@@ -674,7 +685,7 @@ body{
 .scrollToTop-btn{
   z-index: 999;
   position: fixed;
-  background: #3a6cf4;
+  background: crimson;
   color: #fff;
   width: 45px;
   height: 45px;
@@ -707,3 +718,5 @@ body{
   transform: translateY(0);
   opacity: 1;
 }
+
+
